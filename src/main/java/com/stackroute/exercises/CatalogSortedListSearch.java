@@ -7,12 +7,13 @@ public class CatalogSortedListSearch {
 
 
     //write here logic to get sorted Array List which is a global class variable
-    public String getSortedCatalogList() {
+    public String catalogListSorter(List<String> unSortedCatalogList) {
+
         return null;
     }
 
-    //write here logic to sort the input catalogList and search the input value in List
-    public String catalogSearcher(List<String> catalogList, String value) {
+    //write here logic to search the input value in sorted Array List
+    public String catalogListSearcher(String value) {
 
         return null;
     }
