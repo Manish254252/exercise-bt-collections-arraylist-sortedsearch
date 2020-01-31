@@ -25,7 +25,7 @@ public class CatalogSortedListSearchTests {
 
 
     @Test
-    public void givenAStringListWhenSortedThenReturnAStringResult(){
+    public void givenAStringListWhenSortedThenReturnAStringResult() {
         ArrayList<String> catalogListDemo = new ArrayList<>();
         catalogListDemo.add("Nike");
         catalogListDemo.add("Puma");
@@ -34,11 +34,11 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add("SuperDry");
-        assertEquals("[Adidas, NBalance, Nike, Puma, Reebok, SuperDry, UnderArmour]",catalogSortedListSearch.catalogListSorter(catalogListDemo),"Check the logic in method catalogListSorter");
+        assertEquals("[Adidas, NBalance, Nike, Puma, Reebok, SuperDry, UnderArmour]", catalogSortedListSearch.catalogListSorter(catalogListDemo), "Check the logic in method catalogListSorter");
     }
 
     @Test
-    public void givenANullStringListWhenSortedThenReturnAnErrorString(){
+    public void givenANullStringListWhenSortedThenReturnAnErrorString() {
         ArrayList<String> catalogListDemo = new ArrayList<>();
         catalogListDemo.add("Nike");
         catalogListDemo.add("Puma");
@@ -47,11 +47,11 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add(null);
-        assertEquals("The catalog List contains empty or nul or blank space as a value",catalogSortedListSearch.catalogListSorter(catalogListDemo),message_01+" null as a value");
+        assertEquals("The catalog List contains empty or nul or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " null as a value");
     }
 
     @Test
-    public void givenABlankSpaceStringListWhenSortedThenReturnAnErrorString(){
+    public void givenABlankSpaceStringListWhenSortedThenReturnAnErrorString() {
         ArrayList<String> catalogListDemo = new ArrayList<>();
         catalogListDemo.add("Nike");
         catalogListDemo.add("Puma");
@@ -60,11 +60,11 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add(" ");
-        assertEquals("The catalog List contains empty or nul or blank space as a value",catalogSortedListSearch.catalogListSorter(catalogListDemo),message_01+" blank space as a value");
+        assertEquals("The catalog List contains empty or nul or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " blank space as a value");
     }
 
     @Test
-    public void givenAEmptyStringListWhenSortedThenReturnAnErrorString(){
+    public void givenAEmptyStringListWhenSortedThenReturnAnErrorString() {
         ArrayList<String> catalogListDemo = new ArrayList<>();
         catalogListDemo.add("Nike");
         catalogListDemo.add("Puma");
@@ -73,7 +73,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add("");
-        assertEquals("The catalog List contains empty or nul or blank space as a value",catalogSortedListSearch.catalogListSorter(catalogListDemo),message_01+" empty as a value");
+        assertEquals("The catalog List contains empty or nul or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " empty as a value");
     }
 
     @Test
@@ -89,7 +89,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("SuperDry");
         catalogSortedListSearch.catalogListSorter(catalogListDemo);
         assertEquals("Found: Reebok", catalogSortedListSearch.catalogListSearcher("Reebok"), message);
-        assertEquals("Found: Reebok", catalogSortedListSearch.catalogListSearcher( "reebok"), message);
+        assertEquals("Found: Reebok", catalogSortedListSearch.catalogListSearcher("reebok"), message);
     }
 
     @Test
@@ -103,7 +103,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("NBalance");
         catalogListDemo.add("SuperDry");
         catalogSortedListSearch.catalogListSorter(catalogListDemo);
-        assertEquals("Not Found", catalogSortedListSearch.catalogListSearcher( "Levis"), "Check the logic in method catalogListSearcher");
+        assertEquals("Not Found", catalogSortedListSearch.catalogListSearcher("Levis"), "Check the logic in method catalogListSearcher");
     }
 
     @Test
@@ -117,7 +117,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("NBalance");
         catalogListDemo.add("SuperDry");
         catalogSortedListSearch.catalogListSorter(catalogListDemo);
-        assertEquals("Input is not accepted", catalogSortedListSearch.catalogListSearcher( null), message_02+" null");
+        assertEquals("Input is not accepted", catalogSortedListSearch.catalogListSearcher(null), message_02 + " null");
     }
 
     @Test
@@ -131,7 +131,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("NBalance");
         catalogListDemo.add("SuperDry");
         catalogSortedListSearch.catalogListSorter(catalogListDemo);
-        assertEquals("Input is not accepted", catalogSortedListSearch.catalogListSearcher( ""), message_02+" empty");
+        assertEquals("Input is not accepted", catalogSortedListSearch.catalogListSearcher(""), message_02 + " empty");
     }
 
     @Test
@@ -145,7 +145,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("NBalance");
         catalogListDemo.add("SuperDry");
         catalogSortedListSearch.catalogListSorter(catalogListDemo);
-        assertEquals("Input is not accepted", catalogSortedListSearch.catalogListSearcher( " "), message_02+" blank space");
+        assertEquals("Input is not accepted", catalogSortedListSearch.catalogListSearcher(" "), message_02 + " blank space");
     }
 
 }
