@@ -1,13 +1,13 @@
 ## Problem Statement: Search a specific value from a sorted catalog List
 
-**Given two integers find the fraction and handle runtime exception using try and catch**
+**Given a catalog list and search value. sort the list and search for the given value in sorted list**
 
 **This exercise contains a class named CatalogSortedListSearch with the following methods:**
 
      +catalogListSearcher(String) : String  
          - Should take a String as input and return a string as result
          - Should return error message when the String is null or empty or blank space  
-         - Should iterate the sorted to check String existence and return Found or Not Found 
+         - Should iterate the sorted list to check String existence and return Found or Not Found 
 --------------------------------------------------------
      +catalogListSorter(List<String>) : String
          - Should validate the List and return error message when it is null or empty and contains value like empty or blank space or null 
