@@ -1,6 +1,6 @@
 ## Problem Statement: Search a specific value from a sorted catalog List
 
-**Given a catalog list and search value. sort the list and search for the given value in sorted list**
+**Given a catalog list and search value, sort the list and search for the given value in sorted list**
 
 **This exercise contains a class named CatalogSortedListSearch with the following methods:**
 
