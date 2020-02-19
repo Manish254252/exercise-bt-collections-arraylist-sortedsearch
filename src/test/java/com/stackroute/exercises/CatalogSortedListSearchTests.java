@@ -47,7 +47,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add(null);
-        assertEquals("The catalog List contains empty or nul or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " null as a value");
+        assertEquals("The catalog List contains empty or null or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " null as a value");
     }
 
     @Test
@@ -60,7 +60,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add(" ");
-        assertEquals("The catalog List contains empty or nul or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " blank space as a value");
+        assertEquals("The catalog List contains empty or null or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " blank space as a value");
     }
 
     @Test
@@ -73,7 +73,7 @@ public class CatalogSortedListSearchTests {
         catalogListDemo.add("UnderArmour");
         catalogListDemo.add("NBalance");
         catalogListDemo.add("");
-        assertEquals("The catalog List contains empty or nul or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " empty as a value");
+        assertEquals("The catalog List contains empty or null or blank space as a value", catalogSortedListSearch.catalogListSorter(catalogListDemo), message_01 + " empty as a value");
     }
 
     @Test

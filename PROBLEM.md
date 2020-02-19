@@ -29,6 +29,12 @@
     "Not Found"
 --------------------------------------------------------
     Sample Input:
+    [Nike, Puma, Adidas, Reebok, UnderArmour, null, SuperDry] AND Lee
+        
+    Expected Output:
+    "The catalog List contains empty or null or blank space as a value"
+--------------------------------------------------------
+    Sample Input:
     null
         
     Expected Output:
