@@ -23,6 +23,16 @@ public class CatalogSortedListSearchTests {
         catalogSortedListSearch = null;
     }
 
+    @Test
+    public void givenEmptyArrayListToSortThenReturnAnErrorString() {
+        ArrayList<String> catalogListDemo = new ArrayList<>();
+        assertEquals("The catalog List is empty", catalogSortedListSearch.catalogListSorter(catalogListDemo), "Empty array list should not be passed");
+    }
+
+    @Test
+    public void givenArrayListAsNullToSortThenReturnAnErrorString() {
+        assertEquals("The catalog list is null", catalogSortedListSearch.catalogListSorter(null), "Null array list should not be passed");
+    }
 
     @Test
     public void givenAStringListWhenSortedThenReturnAStringResult() {
